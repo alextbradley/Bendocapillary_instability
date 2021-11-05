@@ -1,12 +1,12 @@
-%Make figure 5a and 5b (equilibria characterization and growth rate for
+%Make figure 5a and 5c (equilibria characterization and growth rate for
 %wetting case)
 addpath('Utilities')
 figpref(4);
 %% Parameters
 nu = 5;
 %sigmaguess = [20.6, -428]; %guess at sigma (unstable first), at point
-%where two roots first appear
-%above for nu = 2
+%where two roots first appear. These values appropriate for nu = 2.
+
 sigmaguess = [18.4, -177.4]; %nu = 5;
 %sigmaguess = [18.6, -94]; %nu = 10;
 
@@ -132,9 +132,8 @@ clf;
 colmap = [0, 47, 167; 
          167, 0, 47]/255;
 
-     
 subplot(1,2,1); hold on
-for i = 1:2
+for i = [2,1]
 plot(Vrange, h1s(i,:), 'color', colmap(i,:), 'linewidth', 2.5)
 end
 box on
@@ -143,13 +142,18 @@ ylabel('$h_e(x=1)$', 'interpreter', 'latex', 'FontSize', 20)
 xlim([0.45, 0.7+1e-7])
      
 subplot(1,2,2); hold on
-for i = 1:2
+for i = [2,1] %reverse so that blue on top
 plot(Vrange, sigmaout(i,:), 'color', colmap(i,:), 'linewidth', 2.5)
 %add zero root
 if i == 1
-plot(Vrange(idx1:idx2), 2.5*(-1)^(i+1) * ones(1,idx2 - idx1 + 1), 'color', colmap(i,:), 'linewidth', 2)
+%plot(Vrange(idx1:idx2), 0.5*(-1)^(i+1) * ones(1,idx2 - idx1 + 1), 'color', colmap(i,:), 'linewidth', 2)
+% uncomment above to stagger slightly
+plot(Vrange(idx1:idx2), zeros(1,idx2 - idx1 + 1), 'color', colmap(i,:), 'linewidth', 2)
+
 else
- plot(Vrange(1:idx2), 2.5*(-1)^(i+1) * ones(1,idx2), 'color', colmap(i,:), 'linewidth', 2)
+% plot(Vrange(1:idx2), 0.5*(-1)^(i+1) * ones(1,idx2), 'color', colmap(i,:), 'linewidth', 2)
+% uncomment aboove to stagger slightly
+plot(Vrange(1:idx2), zeros(1,idx2), 'color', colmap(i,:), 'linewidth', 2)
 end   
 end
 %box in main fig for zoom
@@ -168,13 +172,19 @@ xlim([0.45, 0.70000001])
 axes('Position', [.67,.23,.22,.31]);
 box on
 hold on
-for i = 1:2
+for i = [2,1] %reverse so blue on top
 plot(Vrange, sigmaout(i,:), 'color', colmap(i,:), 'linewidth', 2.5)
 %add zero root
 if i == 1
-plot(Vrange(idx1:idx2), 0.5*(-1)^(i+1) * ones(1,idx2 - idx1 + 1), 'color', colmap(i,:), 'linewidth', 2)
+%plot(Vrange(idx1:idx2), 0.5*(-1)^(i+1) * ones(1,idx2 - idx1 + 1), 'color', colmap(i,:), 'linewidth', 2)
+% uncomment above to stagger slightly
+plot(Vrange(idx1:idx2), zeros(1,idx2 - idx1 + 1), 'color', colmap(i,:), 'linewidth', 2)
+
 else
- plot(Vrange(1:idx2), 0.5*(-1)^(i+1) * ones(1,idx2), 'color', colmap(i,:), 'linewidth', 2)
+% plot(Vrange(1:idx2), 0.5*(-1)^(i+1) * ones(1,idx2), 'color', colmap(i,:), 'linewidth', 2)
+% uncomment aboove to stagger slightly
+plot(Vrange(1:idx2), zeros(1,idx2), 'color', colmap(i,:), 'linewidth', 2)
+
 end
 end
 ylim([-40, 25])
