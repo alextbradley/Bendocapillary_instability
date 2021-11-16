@@ -67,10 +67,10 @@
      \]
 }
 
-\shorttitle{Modelling a Novel Bendocapillary Instability} %Elastically mediated 
+\shorttitle{Bendocapillary Instability of Liquid in a Flexible-Walled Channel} %Elastically mediated 
 \shortauthor{A. T. Bradley, I. J. Hewitt, D. Vella}
 
-\title{Modelling a Novel Bendocapillary Instability.}
+\title{Bendocapillary Instability of Liquid in a Flexible-Walled Channel}
 
 %\author{Alexander T. Bradley\aff{1}
 %  Ian. J. Hewitt\aff{1}
@@ -131,7 +131,7 @@ The mechanism for instability is in this setup is elucidated in figure~\ref{fig:
     \label{fig:mechanism_schematic}
 \end{figure}
 
-Perhaps surprisingly, a similar mechanism is also applicable to wetting configurations. In the wetting case, the bulk liquid pressure is negative, and the associated channel deformations are inwards, but the result is the same: protrusions now advance into a stronger confinement, which is further enhanced by the additional elastic response. The combination of these two effects reduces the local liquid pressure (it becomes more negative), which might cause the perturbation to grow if its wavelength is sufficiently long. Therefore, both wetting and non-wetting liquids may theoretically experience this bendocapillary instability in the same channel. This is in contrast to the closest analogy in a rigid channel, in which the walls are tapered: configurations with wetting (non-wetting, respectively) liquids are only theoretically unstable to sufficiently perturbations of sufficiently long wavelength if the channel is tapered inwards (outwards) away from the liquid.
+Perhaps surprisingly, a similar mechanism is also applicable to wetting configurations. In the wetting case, the bulk liquid pressure is negative, and the associated channel deformations are inwards, but the result is the same: protrusions now advance into a stronger confinement, which is further enhanced by the additional elastic response. The combination of these two effects reduces the local liquid pressure (it becomes more negative), which might cause the perturbation to grow if its wavelength is sufficiently long. Therefore, both wetting and non-wetting liquids may theoretically experience this bendocapillary instability in the same channel. This is in contrast to the closest analogy in a rigid channel, in which the walls are tapered~\cite{AlHousseiny2012NaturePhysics}: configurations with wetting (non-wetting, respectively) liquids are only theoretically unstable to sufficiently perturbations of sufficiently long wavelength if the channel is tapered inwards (outwards) away from the liquid.
 
 In this paper, we investigate this instability mechanism quantitatively. We begin by presenting a simple scaling argument for the wavenumber of unstable modes and the associated growth rates, before developing a formal mathematical model of the system shown in figure~\ref{fig:mechanism_schematic}. The model equations are then non-dimensionalized; in doing so, we identify three key parameters relating to the aspect ratio of the channel, the ability of the liquid to deform it, and the amount of liquid it contains. Following this, in \S\ref{S:Equilibria}, we set out the base states (equilibria) of the system, which are parametrized by these three dimensionless numbers; these equilibria are essentially those described by~\citet{Taroni2012JFM}, but we extend this description to include non-wetting configurations. In \S\ref{S:LSA}, we consider the linear stability of these equilibria. We numerically solve the equations which must be satisfied by perturbations, and identify several important, yet generic features of these solutions: equilibria are linearly unstable to perturbations of sufficiently small wavenumber (large wavelength), with maximum growth rates that increase with both the channel bendability and amount of liquid in the channel. In \S\ref{S:Asymptotics}, we consider the limiting case of small channel deformations. Using asymptotic methods, we examine the system of equations that perturbations must satisfy in this limit, deriving a universal dispersion relation, and verifying analytically the observations of \S\ref{S:LSA}. Finally, in \S\ref{S:Conclusion}, we discuss and summarize the results our results, and provide concluding remarks.
 
@@ -142,7 +142,7 @@ Before developing a detailed mathematical model, we seek first to gain quantitat
 
 \begin{figure}
 \centering
-\includegraphics[width = .99\textwidth]{figures/ScalingArgument.pdf}
+\includegraphics[width = .99\textwidth]{figures/fig3_scaling_argument.pdf}
 \caption{Schematic diagrams of a section of a flexible channel consisting of a solid base and two flexible walls, which are only permitted to bend in the transverse direction. A cut along the centre of the channel (black dashed line) allows the two halves to bend independently of one another. (a) The system is in equilibrium with the meniscus located a distance $x_m$ from the base.  (b) The equilibrium is perturbed by moving the menisci on either side of the cut a distance $\delta$; as described in the main text, if $\lambda$ is sufficiently large, this perturbation results in the flow of liquid from troughs (blue) to peaks (red) with speed $U > 0$, amplifying the perturbation.}
 \label{fig:Scaling:ScalingArgument}
 \end{figure}
@@ -418,7 +418,7 @@ In contrast, for wetting configurations ($\nu >0$), there are regions in which e
 \begin{figure}
 \centering
 \includegraphics[width =0.98\textwidth]{figures/fig5_equilibria.pdf}
-\caption{(a)--(b) Free end channel width $h_e(x = 1)$ in steady solutions of the model equations~\eqref{E:Modelling:NonDim:PDE1}--\eqref{E:Modelling:NonDim:Kinematic} with (a) $\nu = 5$ and (b) $\nu = -5$. Where appropriate, the equilibria corresponding to the `$+$' and `$-$' roots in~\eqref{E:Equilibria:MeniscusWidth} are indicated by red and blue curves, respectively (the latter do not exist in the non-wetting case). (c)--(d) Growth rate $\sigma_u$ of uniform perturbations (i.e.~of the form~\eqref{E:Equilibria:uniform_perturbation}) to the equilibria corresponding to those shown in (a) and (b), respectively. Each equilibria is associated with two values of $\sigma_u$, one of which is always zero. The inset in (c) is a close up of the section of the main figure indicated by the black dashed box.}\label{fig:Equilibria}
+\caption{(a)--(b) Free end channel width $h_e(x = 1)$ in steady solutions of the model equations~\eqref{E:Modelling:NonDim:PDE1}--\eqref{E:Modelling:NonDim:Kinematic} with (a) $\nu = 5$ and (b) $\nu = -5$. Where appropriate, the equilibria corresponding to the `$+$' and `$-$' roots in~\eqref{E:Equilibria:MeniscusWidth} are indicated by red and blue curves, respectively (the latter do not exist in the non-wetting case). (c)--(d) Growth rate $\sigma_u$ of uniform perturbations (i.e.~of the form~\eqref{E:Equilibria:uniform_perturbation}) to the equilibria corresponding to those shown in (a) and (b), respectively. Each equilibria is associated with two values of $\sigma_u$, one of which is always zero. (The red and blue $\sigma_u = 0$ curves are indistinguishable for $0.55 \lesssim V \lesssim 0.67$.) The inset in (c) is a close up of the section of the main figure indicated by the black dashed box.}\label{fig:Equilibria}
 \end{figure}
 
 Before moving on to consider the stability of these equilibria to in-plane perturbations, we briefly consider their stability to \textit{uniform} perturbations (or, equivalently to in-plane perturbations with zero wavenumber). In this scenario, the instability mechanism is somewhat simpler than that described in \S\ref{S:Introduction}: the meniscus would like to advance to wet the beams over a longer length, but the additional deformation that results will incur a bending energy penalty.
@@ -437,12 +437,12 @@ Since we are primarily interested in small volume configurations, we shall hence
 
 \section{Linear Stability Analysis}\label{S:LSA}
 %set out linearized equations and present numerical solutions of them 
-In this section, we consider the linear stability of the equilibria described in the previous section to in-plane perturbations with an \textit{arbitrary} wavenumber $k$. We do so by setting
+In this section, we assess the linear stability of the equilibria described in the previous section to in-plane perturbations with an \textit{arbitrary} wavenumber $k$. We do so by setting
 \begin{align}
 h &= h_e(x) + \varepsilon \Lambda(x)\exp(\sigma t + i k y),\label{E:LSA:Perturbation1} \\
  p &= p_0 + \varepsilon \Pi(x)\exp(\sigma t + i k y),\\ x_m  &= x_0 +  \varepsilon \exp(\sigma t + i k y),\label{E:LSA:Perturbation3}
 \end{align}
-with $\varepsilon$ again arbitrary, in the model equations~\eqref{E:Modelling:NonDim:ClampedBC}--\eqref{E:Modelling:NonDim:Kinematic}. Linearizing the resulting problem yields the following BVP for $\Lambda$ and $\Pi$:
+with $\varepsilon$ again arbitrary, in the model equations~\eqref{E:Modelling:NonDim:ClampedBC}--\eqref{E:Modelling:NonDim:Kinematic}. Linearizing the resulting problem yields the following BVP for channel shape and pressure perturbations $\Lambda$ and $\Pi$, respectively:
 \begin{align}
 \sigma \Lambda &=  \frac{h_e^2}{3|\nu|}\left[3\dd{h_e}{x} \dd{\Pi}{x} + h_e\left(\dd{^2 \Pi}{x^2} - k^2 \Pi\right)\right] & &0 < x < x_0,\label{E:LSA:ODEwet}\\
 0 &= \Pi & &x_0 < x < 1,\label{E:LSA:ODEdry}\\
@@ -453,7 +453,7 @@ The boundary conditions on~\eqref{E:LSA:ODEwet}--\eqref{E:LSA:pressure2shape} ar
 \Lambda &= 0 = \dd{\Lambda}{x} = \dd{\Pi}{x} & &\text{at}~x = 0,\label{E:LSA:BC_at_0}\\
 \Pi &= \frac{\nu}{h_m^2}\left(\dd{h_e}{x} + \Lambda\right) + \nu \aspect k^2 & &\text{at}~x = x_0,\label{E:LSA:pressure_bc}\\
 \dd{^2 \Lambda}{x^2} - \poisson k^2
-\Lambda &= 0 = \dd{^3 \Lambda}{x^3} - (2-\poisson)k^2 \dd{\Lambda}{x} & &\text{at}~x = 1,\label{E:LSA:BC_at_1}
+\Lambda & = 0, \quad  \dd{^3 \Lambda}{x^3} - (2-\poisson)k^2 \dd{\Lambda}{x} = 0 & &\text{at}~x = 1,\label{E:LSA:BC_at_1}
 \end{align}
 \begin{equation}\label{E:LSA:jump_conds}
 \left[\Lambda\right]_-^+= \left[\dd{\Lambda}{x}\right]_-^+ = \left[\dd{^2\Lambda}{x^2}\right]_-^+= 0, \quad\left[\dd{^3 \Lambda}{x^3}\right]_-^+ = \frac{\nu}{h_m }.
@@ -467,11 +467,6 @@ The terms on the right hand side of~\eqref{E:LSA:pressure_bc} elucidate the mech
 
 
 \subsection{Numerical Results}
-As for the uniform perturbation discussed in the previous section, we find two unique numerical solutions of~\eqref{E:LSA:ODEwet}--\eqref{E:LSA:kinematic}, and which is of these is returned depends on the proximity to the initial guess for $\sigma$. The two branches originate at $k =0$ from the $\sigma_u$ discussed in the previous section. Here we are interested only in the root that originates from the zero solution for $\sigma_u$: this branch shows positive growth rates (figure~\ref{fig:LinearStability:GrowthRates}a), while the branch that originates from the non-zero solution for $\sigma_u$ has very high decay rates even for small $k$~\citep[not shown, see][]{BradleyPhDthesis}. Henceforth, we use $\sigma(k)$ for the branch that originates from the zero solution for $\sigma_u$ (i.e. $\sigma(k=0) = 0$) that is of interest.
-
-
-
- %In particular, those solutions on the $\sigma_1$ branch originate from the $k = 0$ solution that does not conserve mass in the $x$-direction; while this is nonphysical for two-dimensional equilibria, in three-dimensions for $k \neq 0$, however, it is possible to move mass in the $y$-direction and there is no contradiction.
 
 \begin{figure}
 \centering
@@ -481,52 +476,58 @@ As for the uniform perturbation discussed in the previous section, we find two u
 \end{figure}
 
 
-The salient observations from the dispersion relations shown in figure~\ref{fig:LinearStability:GrowthRates} are, firstly, that $\sigma > 0$ for sufficiently small wavenumbers, an observation appears to be generic in numerical solutions of the BVP~\eqref{E:LSA:ODEwet}--\eqref{E:LSA:kinematic} for both wetting and non-wetting configurations. Secondly, $\sigma\sim k^2$ as $k \to 0$ (figure~\ref{fig:LinearStability:GrowthRates}b) as suggested by the scaling argument~\eqref{E:Scaling:amplitude_ode}. (We shall derive this formally in the case of small deformations shortly.)
+As for the uniform perturbation discussed in the previous section, we find two unique numerical solutions of~\eqref{E:LSA:ODEwet}--\eqref{E:LSA:kinematic}, and which is of these is returned depends on the proximity to the initial guess for $\sigma$, which must be passed to the BCP4c routine. The two branches originate at $k=0$ from the $\sigma_u$ discussed in the previous section. Here we are interested only in the root that originates from the zero solution for $\sigma_u$: this branch shows positive growth rates (figure~\ref{fig:LinearStability:GrowthRates}a), while the branch that originates from the non-zero solution for $\sigma_u$ has very high decay rates even for small $k$~\citep[not shown, see Ch. 5 in][]{BradleyPhDthesis}. Henceforth, we use $\sigma(k)$ to denote the branch of solutions to~\eqref{E:LSA:ODEwet}--\eqref{E:LSA:kinematic} that originates from the zero solution for $\sigma_u$ (i.e. $\sigma(k=0) = 0$), and ignore the branch that originates from the non-zero solution at $k = 0$.
 
-Going beyond these observations, we see that numerical solutions also indicate that growth rates are not symmetric in $\nu \to -\nu$, with growth rates marginally larger than wetting configurations than non-wetting configurations with the same $|\nu|$ and $|\aspect|$ (figure~\ref{fig:LinearStability:GrowthRates}a). It is not straightforward to provide a causal link between a reversal of wetting conditions ($\nu \to -\nu$, $a \to -a$) and changes in the growth rate, since the pressure gradient and equilibrium meniscus displacement (which set the growth rate via~\eqref{E:LSA:kinematic}) are intimately coupled in the BVP~\eqref{E:LSA:ODEwet}--\eqref{E:LSA:kinematic}. Note, however, that this asymmetry disappears in the limit $V \to 0$; in the following section, we show this explicitly in the case of small deformations (a case that covers the limit $V \to 0$) but this result can be seen by noting that for $V$, $h_e(x)\approx 1$ and $h_e'(x) \approx 0$, in which case the BVP is anti-symmetric in $\nu \to -\nu$, $a \to -a$; the growth rate, which depends on the product of $P$ and $H$ (and their derivatives), will therefore be invariant under this transformation. %\blue{I think we should also be able to say qualitatively why the difference disappears as $k \to 0, \infty$, but it doesn't seem immediate to me from~\eqref{E:LSA:ODEwet}--\eqref{E:LSA:kinematic}.}
+ %In particular, those solutions on the $\sigma_1$ branch originate from the $k = 0$ solution that does not conserve mass in the $x$-direction; while this is nonphysical for two-dimensional equilibria, in three-dimensions for $k \neq 0$, however, it is possible to move mass in the $y$-direction and there is no contradiction.
+
+The two salient observations from the dispersion relations shown in figure~\ref{fig:LinearStability:GrowthRates} are (i) that $\sigma > 0$ for sufficiently small wavenumbers, an observation appears to be generic in numerical solutions of the BVP~\eqref{E:LSA:ODEwet}--\eqref{E:LSA:kinematic} for both wetting and non-wetting configurations, and (ii) $\sigma\sim k^2$ as $k \to 0$ (figure~\ref{fig:LinearStability:GrowthRates}b) as suggested by the scaling argument~\eqref{E:Scaling:amplitude_ode}. (We shall derive this formally in the case of small deformations shortly.)
+
+Going beyond these observations, we see that numerical solutions also indicate that growth rates are not symmetric in $\nu \to -\nu$: growth rates are marginally larger for wetting configurations than non-wetting configurations, for the same $|\nu|$ and $|\aspect|$ (figure~\ref{fig:LinearStability:GrowthRates}a). It is not straightforward to provide a clear link between a reversal of wetting conditions ($\nu \to -\nu$, $a \to -a$) and changes in the growth rate, since the pressure gradient and equilibrium meniscus displacement (which set the growth rate via~\eqref{E:LSA:kinematic}) are intimately coupled in the BVP~\eqref{E:LSA:ODEwet}--\eqref{E:LSA:kinematic}. Note, however, that this asymmetry appears to disappear in the limit $V \to 0$ (figure~\ref{fig:LinearStability:GrowthRates}a, b); in the following section, we show this symmetry analytically in the case of small deformations (which covers the limit $V \to 0$). This symmetry can also be seen algebraically by noting that for small $V$, we have $h_e(x)\approx 1$ and $h_e'(x) \approx 0$, in which case the BVP~\eqref{E:LSA:ODEwet}--\eqref{E:LSA:kinematic} is anti-symmetric in $\nu \to -\nu$, $a \to -a$; the growth rate, which depends on the product of $P$ and $H$ (and their derivatives), is therefore invariant under this transformation in the limit of small deformations. %\blue{I think we should also be able to say qualitatively why the difference disappears as $k \to 0, \infty$, but it doesn't seem immediate to me from~\eqref{E:LSA:ODEwet}--\eqref{E:LSA:kinematic}.}
 
 %discussion of stability and comparison between wetting and non-wetting cases
-Another generic feature of numerical solutions of the BVP~\eqref{E:LSA:ODEwet}--\eqref{E:LSA:kinematic} is that $H(x_0)$ --the perturbation to the shape at the meniscus -- is negative for wetting configurations and positive for non-wetting configurations (figure~\ref{fig:LinearStability:GrowthRates}c). In other words, the channel deformation of the base state is enhanced at protrusions and reduced at invaginations for both wetting and non-wetting conditions, confirming the suggestion made in the scaling argument in \S\ref{S:Scaling}. In the results shown in figure~\ref{fig:LinearStability:GrowthRates}c, the channel shape perturbation tends to increase in magnitude with the volume $V$ and decrease with the wavenumber $k$; in the case of small deflections, however, the channel shape perturbation at the meniscus is, perhaps surprisingly, independent of the wavenumber, as we shall see. 
+Another generic feature of numerical solutions of the BVP~\eqref{E:LSA:ODEwet}--\eqref{E:LSA:kinematic} is that $H(x_0)$ -- the perturbation to the shape at the meniscus -- is negative for wetting configurations and positive for non-wetting configurations (figure~\ref{fig:LinearStability:GrowthRates}c). In other words, the channel deformation of the base state is enhanced at protrusions and reduced at invaginations, for both wetting and non-wetting conditions, confirming the suggestion made when describing the instability mechanism in \S\ref{S:Introduction}. In the results shown in figure~\ref{fig:LinearStability:GrowthRates}c, the channel shape perturbation tends to increase in magnitude with the volume $V$ and decrease with the wavenumber $k$; in the case of small deflections, however, the channel shape perturbation at the meniscus is, perhaps surprisingly, independent of the wavenumber, as we shall see. 
+
+\begin{figure}
+\centering
+\includegraphics[width = \textwidth]{figures/fig7_rescaled_growth_rates.pdf}
+\caption{Numerically obtained dispersion relations $\sigma(k)$ rescaled according to~\eqref{E:LSA:DimensionlessScalings} for cross sectional volumes (a) $V = 0.1$, (b) $V = 0.2$, and (c) $V = 0.3$ with $\aspect = 0.01$ in each case. Each curve corresponds to a different value of $\nu$, taking logarithmically spaced values between $10^{-2}$ and $10^{2}$ as indicated by the colorbar. Here we show only wetting configurations ($\nu >0$, $a >0$), but non-wetting configurations behave similarly (see figure~\ref{fig:LinearStability:GrowthRates}). }
+\label{fig:RescaledGrowthRates}
+\end{figure}
 
 For the parameter values used in figure~\ref{fig:LinearStability:GrowthRates}, the fastest growing mode, denoted $k^*$, and the corresponding growth rate $\sigma^* = \sigma(k^*)$, both increase with cross-sectional volume $V$. This is in qualitative agreement with the scaling argument~\eqref{E:Scaling:SigmaScaling1}, which, after non-dimensionalizing with the length scale $L$ and time scale $\tau_c$, suggests the typical scales
 \begin{equation}\label{E:LSA:DimensionlessScalings}
 k_c  = \left(\frac{\nu V^3}{a}\right)^{1/2}, \qquad \sigma_c = \frac{\nu^2 V^7}{|a|}.
 \end{equation}
 
-For a quantitative assessment of the scaling argument, we show numerically obtained dispersion relations $\sigma(k)$, rescaled according to~\eqref{E:LSA:DimensionlessScalings} in figure~\ref{fig:CollapsedGrowthRates}a. Here we see that the data collapse onto a universal curve for $\nu \ll 1$ (indicated by dark shades in figure~\ref{fig:RescaledGrowthRates}), but deviate for $\nu \gg 1$ (light shades). In addition, the deviation occurs sooner (i.e. at lower $\nu$ values) for larger volume $V$ where the base state deformation is expected to be larger. To predict the envelope enclosing the curves $\sigma/\sigma_c$, and elucidate the small deformation results alluded to above, we now present an asymptotic expansion of the BVP~\eqref{E:LSA:ODEwet}--\eqref{E:LSA:kinematic} in the limit of small deformations.
+For a quantitative assessment of the scaling argument, we show numerically obtained dispersion relations $\sigma(k)$, rescaled according to~\eqref{E:LSA:DimensionlessScalings} in figure~\ref{fig:CollapsedGrowthRates}a. Here we see that the data collapse onto a universal curve for $\nu \ll 1$ (indicated by dark shades in figure~\ref{fig:RescaledGrowthRates}), but deviate for $\nu \gg 1$ (light shades). In addition, the deviation occurs sooner (i.e. at lower $\nu$ values) for larger volume $V$, which correspond to increased base state deformation. To predict the envelope enclosing the curves $\sigma/\sigma_c$, and elucidate the small deformation results alluded to above, we now present an asymptotic expansion of the BVP~\eqref{E:LSA:ODEwet}--\eqref{E:LSA:kinematic} in the limit of small deformations.
 
-\begin{figure}
-\centering
-\includegraphics[width = \textwidth]{figures/fig7_rescaled_growth_rates.pdf}
-\caption{Numerically obtained dispersion relations $\sigma(k)$ rescaled according to~\eqref{E:LSA:DimensionlessScalings} for cross sectional volumes (a) $V = 0.1$, (b) $V = 0.2$, and (c) $V = 0.3$ with $\aspect = 0.01$ in each case. Each curve corresponds to a different value of $\nu$, taking logarithmically spaced values between $10^{-2}$ and $10^{2}$ as indicated by the colorbar. Here we show only wetting configurations ($\nu >0$, $a >0$), but non-wetting configurations behave qualitatively the same (see figure~\ref{fig:LinearStability:GrowthRates}). }
-\label{fig:RescaledGrowthRates}
-\end{figure}
 
 \section{Asymptotic Analysis}\label{S:Asymptotics}
 \newcommand{\param}{\delta} %small param used in this section
 %use asymptotics to describe the envelope of solutions
-In this section, we present an asymptotic analysis of the boundary value problem~\eqref{E:LSA:ODEwet}--\eqref{E:LSA:kinematic}  in the case of small deformations. The main result of this section is that we are able to express the envelope of growth rate curves in figure~\ref{fig:RescaledGrowthRates} analytically, and thus predict the fastest growing mode and corresponding growth rate in the limit of small deflection. Along the way, we elucidate the small volume observations mentioned in the previous section.
+In this section, we present an asymptotic analysis of the boundary value problem~\eqref{E:LSA:ODEwet}--\eqref{E:LSA:kinematic}  in the limit of small channel deformations. The key result of this section is expressing analytically the envelope of growth rate curves in figure~\ref{fig:RescaledGrowthRates}, and thus predict the fastest growing mode and corresponding growth rate in the limit of small deflection. Along the way, we elucidate the small volume observations mentioned in the previous section.
 
-Small deformations are encoded by restricting ourselves to those equilibria with $\epsilon  = |\nu| V^4 \ll 1$. To begin with we note that using the volume constraint on equilibria~\eqref{E:Equilibria:MeniscusDispQuadratic}b, the volume and meniscus position of the equilibrium are related by
+Small deformations are encoded by restricting ourselves to those equilibria with $\epsilon  \coloneqq |\nu| V^4 \ll 1$. To begin with we note that, from the volume constraint~\eqref{E:Equilibria:MeniscusDispQuadratic}b, the volume and meniscus position of the  equilibria are related by
 \begin{equation}\label{E:Asymptotics:EqMeniscusPositionExpansion}
     x_0 = V\left[1 + \mathrm{sign}(\nu) \frac{\epsilon}{20} + \order{\epsilon^2}\right],
 \end{equation}
-in the limit $\epsilon \to 0$. In addition, for $x < x_0$, equilibrium channel shape is given by
+in the limit $\epsilon \to 0$. In addition, from~\eqref{E:Equilibria:EqShape}, the equilibrium channel shape is given by
 \begin{equation}\label{E:Asymptotics:EqChannelShapeExpansion}
     h_e(x) = 1 + \epsilon \mathrm{sign}(\nu)\psi\left(\frac{x}{V}\right) + \order{\epsilon^2}, \qquad \psi(s) = \frac{1}{24}\left\{\left[4(1-s) - (1-s)^4\right]-3\right\}.
 \end{equation}
+for $x < x_0$.
 
-Before we can proceed with an asymptotic expansion, we must determine the size of the terms in which the wavenumber $k$ appears. Motivated by the scaling of \S\ref{S:Scaling}, in which the fastest growing modes were those with wavenumbers such that the destabilizing transverse and stabilizing in-plane curvature contributions are comparable (i.e. when the terms on the right hand side of~\eqref{E:LSA:pressure_bc} are comparable), we introduce a scaled wavenumber
+Before we can proceed with an asymptotic expansion, we must determine the size of the terms in which the wavenumber $k$ appears. Motivated by the scaling of \S\ref{S:Scaling}, in which the fastest growing modes were those with wavenumbers such that the destabilizing transverse and stabilizing in-plane curvature contributions are comparable (i.e. those values of $k$ which result in the terms on the right-hand side of~\eqref{E:LSA:pressure_bc} being comparable in size), we introduce a scaled wavenumber
 \begin{equation}\label{E:Asymptotics:RescaledWavenumber}
-k = \left(\frac{\nu V^3}{a}\right)^{1/2} K.
+k = k_c K = \left(\frac{\nu V^3}{a}\right)^{1/2} K.
 \end{equation}
-In addition, in anticipation of bending deformation being primarily confined to the wet region $0 < x < x_0 = V + \mathcal{O}(\epsilon)$, we introduce the rescaled spatial variable $X = x/V$. 
+where $k_c = \sqrt{\nu V^3 /a}$, as defined in \S\ref{S:Scaling}. In addition, in anticipation of bending deformation being primarily confined to the wet region $0 < x < x_0 = V + \mathcal{O}(\epsilon)$, we introduce the rescaled spatial variable $X = x/V$. 
 
 After inserting~\eqref{E:Asymptotics:RescaledWavenumber} and the scaled variable $X$ into the BVP~\eqref{E:LSA:ODEwet}--\eqref{E:LSA:kinematic}, the parameter
 \begin{equation}\label{E:Asymptotics:}
 \delta= \frac{\nu V^5}{|a|} = \frac{\epsilon V }{|a|}
 \end{equation}
-naturally emerges. The parameter $\delta$ describes the relative sizes of increases in-plane and transverse bending energies of an equilibrium configuration that is subject to a perturbation with wavenumber $k \sim k_c = \sqrt{\nu V^3 /a}$. To see this we note that the typical (dimensional) in-plane and transverse wall curvatures induced by this perturbation are
+naturally emerges. The parameter $\delta$ describes the relative sizes of increases in in-plane and transverse bending energies of that would occur if a small deformation equilibria is subject to a perturbation with wavenumber $k \sim k_c$. To see this we note that the typical (dimensional) in-plane and transverse wall curvatures induced by this perturbation are
 \begin{equation}
 \kappa_{\text{in-plane}} \sim k_c^2 \Delta h \sim \frac{\nu V^3}{a} \Delta h \quad \text{and}\quad \kappa_{\text{transverse}} \sim \frac{\Delta h}{x_0^2} \sim  \frac{\Delta h}{V^2},
 \end{equation}
@@ -541,7 +542,7 @@ whose ratio is
 \sim \delta^{3/2}.
 \end{equation}
 
-To make progress, we consider the limit $\delta \to 0$, which corresponds to relatively small in-plane bending deformations, compared to transverse bending deformations.  We  also  rescale  the  perturbed  channel  shape $H$ and  pressure $P$ with $\nu V^3 $to  reflect the leading order behaviour: a shearing force of magnitude $\nu$ applied over a length equal to  the  magnitude  of  the  perturbation  (the  shear  is  the  third  derivative  of  the  channel deformation, which combined with the length rescaling is responsible for the $V^3$).
+To make progress, we consider the limit $\delta \to 0$, which corresponds to relatively small in-plane bending deformations, compared to transverse bending deformations.  We  also  rescale  the  perturbed  channel  shape $H$ and  pressure $P$ with $\nu V^3$ to  reflect the leading order behaviour of the perturbation: a shear force of magnitude $\nu$ applied over a length equal to  the magnitude  of  the  perturbation  (the  shear  is  the  third  derivative  of  the  channel deformation, which, when combined with the length rescaling, is responsible for the $V^3$).
 
 After inserting~\eqref{E:Asymptotics:EqMeniscusPositionExpansion}--\eqref{E:Asymptotics:EqChannelShapeExpansion} into the BVP~\eqref{E:LSA:ODEwet}--\eqref{E:LSA:kinematic}, the problem for the rescaled channel shape and pressure,
 \begin{equation}
@@ -557,19 +558,19 @@ with boundary conditions
 \begin{align}
 G &= 0 = \dd{G}{X} = \dd{Q}{X} & &\text{at}~X = 0,\label{E:Asymptotics:BC_at_0}\\
 Q + \frac{\epsilon V}{20}\ddp{Q}{X} &= \epsilon\left(\dd{\psi}{X} + G + K^2\right)  & &\text{at}~X= 1,\label{E:Asymptotics:pressure_bc}\\
-\dd{^2 G}{X^2} -\param \poisson K^2 G &= 0 = \dd{^3 G}{X^3} - (2-\poisson)\param K^2 \dd{G}{X} & &\text{at}~X = \frac{1}{V},\label{E:Asymptotics:BC_at_1}
+\dd{^2 G}{X^2} -\param \poisson K^2 G &= 0, \quad  \dd{^3 G}{X^3} - (2-\poisson)\param K^2 \dd{G}{X} = 0 & &\text{at}~X = \frac{1}{V},\label{E:Asymptotics:BC_at_1}
 \end{align}
 \begin{align}\label{E:Asymptotics:jump_conds}
 \left[G\right]_-^+= \left[\dd{G}{x}\right]_-^+ = \left[\dd{^2G}{X^2} + \frac{\epsilon V}{20}\dd{^3 G}{X^3}\right]_-^+&= 0, \\
 \left[\dd{^3 G}{X^3} + \frac{\epsilon V}{20}\dd{^4 G}{X^4}\right]_-^+ &= 1 - \epsilon \psi(1).
 \end{align}
-Here the jump applies across the equilibrium meniscus position, located at $X = 1$. The growth rate $\sigma$ satisfies
+Here the jump applies at the linearized equilibrium position, $X = 1$. The growth rate $\sigma$ satisfies
 \begin{equation}\label{E:Asymptotics:kinematic}
 3V^2\sigma = -\left[1 + 2\epsilon \psi(1)\right]\left[\dd{Q}{X} + \frac{\epsilon V}{20}\dd{^2 Q}{X^2}\right]_{X = 1}.
 \end{equation}
-Note that the reduced problem~\eqref{E:Asymptotics:ODEwet}--\eqref{E:Asymptotics:kinematic} is independent of the sign of $\nu$ and $\aspect$, demonstrating that the growth rate $\sigma$ is independent of the wettability in the limit of small deformations.
+Note that the reduced problem~\eqref{E:Asymptotics:ODEwet}--\eqref{E:Asymptotics:kinematic} is independent of the sign of $\nu$ and $\aspect$, demonstrating that the growth rate $\sigma$ is independent of the wettability in the limit of small deformations, as suggested in \S\ref{S:LSA}.
 
-We pose a bivariate asymptotic expansion of $G(X)$, $Q(X)$, and $\sigma$ in both $\epsilon$ and $\param$, using subscript $\left\{i,j\right\}$ to denote the term at $\mathcal{O}(\param^i \epsilon^j)$:
+To proceed, we pose a bivariate asymptotic expansion of $G(X)$, $Q(X)$, and $\sigma$ in both $\epsilon$ and $\param$, using subscript $\left\{i,j\right\}$ to denote the term at $\mathcal{O}(\param^i \epsilon^j)$:
 \begin{align}
 G(X) &=    G_{0,0} + \param G_{1,0} + \epsilon G_{0,1} +  \param^2 G_{2,0} + \param \epsilon G_{1,1} + \epsilon^2 G_{0,2} + \dots,\label{E:Asymptotics:ExpansionG} \\
 Q(X) &=  Q_{0,0} + \param Q_{1,0} + \epsilon Q_{0,1} +  \param^2 Q_{2,0} + \param \epsilon Q_{1,1} + \epsilon^2 Q_{0,2}+\dots,\label{E:Asymptotics:ExpansionQ} \\
@@ -577,25 +578,25 @@ Q(X) &=  Q_{0,0} + \param Q_{1,0} + \epsilon Q_{0,1} +  \param^2 Q_{2,0} + \para
 \end{align}
 
 The particular hierarchy of problems arising from the asymptotic expansion~\eqref{E:Asymptotics:ExpansionG}--\eqref{E:Asymptotics:ExpansionSigma} depends on the relative sizes of $\epsilon$ and $\param$, but we must ensure that $V \gg |a|$ for lubrication theory to remain valid, and therefore
-$\param  = \epsilon (V/|a|) \gg \epsilon$.  In Appendix~\ref{A:SmallDeformationAsymptotics}, we present the particular hierarchy of problems and solutions for the case $\epsilon \sim \param^2$, but this analysis can be readily transferred to other asymptotic balances which preserve $\delta \gg \epsilon$.
+$\param  = \epsilon (V/|a|) \gg \epsilon$.  In Appendix~\ref{A:SmallDeformationAsymptotics}, we present the particular hierarchy of problems, and their solutions for the case $\epsilon \sim \param^2$, but this analysis can be readily transferred to other asymptotic balances that preserve the necessary condition $\delta \gg \epsilon$.
 
-The leading order ($\mathcal{O}(1)$) and first order ($\mathcal{O}(\param)$) problems are independent of the relationship between $\epsilon$ and $\param$. We find that, in these problems, the pressure profile $Q_{i,0}(X),~i = 1,2$ is a linear function of $X$. However, to satisfy the no flux condition at $X =0$, this pressure perturbation is in fact constant, and thus from~\eqref{E:Asymptotics:kinematic} offers no contribution to $\sigma$, i.e.
+The leading order ($\mathcal{O}(1)$) and first order ($\mathcal{O}(\param)$) problems are independent of the relationship between $\epsilon$ and $\param$. We find that, in these problems, the pressure profile $Q_{i,0}(X),~i = 1,2$ is a linear function of $X$. However, to satisfy the no flux condition at $X =0$ (the third of~\eqref{E:Asymptotics:BC_at_0}), this pressure perturbation is in fact constant, and thus from~\eqref{E:Asymptotics:kinematic} offers no contribution to $\sigma$, i.e.
 \begin{equation}
 \sigma_{0,0} = 0 = \sigma_{1,0}.
 \end{equation}
-We also find the leading order contribution to the perturbation to the channel shape to be
+The leading order contribution to the perturbation to the channel shape is
 \begin{equation}\label{E:Asymptotics:ChannelShapeSolution}
 G_{0,0} =\begin{cases}
 \frac{X^2}{6}(X - 3) & 0 < X < 1,\\
 \frac{1}{6}(1-X) & 1 < X < 1/V.
 \end{cases}
 \end{equation}
-In particular, this means that $H(X=1) \sim -\nu V^3/3 + \order{\delta}$ as $|\nu| V^4 \to 0$, which agrees well with numerical solutions of the BVP~\eqref{E:LSA:ODEwet}--\eqref{E:LSA:kinematic} (figure~\ref{fig:CollapsedGrowthRates}a). This result confirms that the perturbation to the channel shape is negative (positive, respectively) for wetting (non-wetting) configurations, and that the leading order perturbation to the channel shape is independent of the wavenumber $k$, as suggested in \S\ref{S:LSA}. In addition, we find the Poisson's ratio $\poisson$ in the first order term, $G_{1,0}$, but not in the leading order term, $G_{0,0}$, demonstrating that the contribution from the dry region enters at lower order (the Poisson's ratio only enters the problem via the boundary conditions on the dry region, at $x = 1$): bending deformations are confined primarily to the wet region in the limit of small deformations, as expected.
+In particular, this means that $H(X=1) \sim -\nu V^3/3 + \order{\delta}$ as $|\nu| V^4 \to 0$, which agrees well with numerical solutions of the BVP~\eqref{E:LSA:ODEwet}--\eqref{E:LSA:kinematic} (figure~\ref{fig:CollapsedGrowthRates}a). This result confirms that the perturbation to the channel shape is negative (positive, respectively) for wetting (non-wetting) configurations, and that the leading order perturbation to the channel shape is independent of the wavenumber $k$, as suggested in \S\ref{S:LSA}. In addition, we find that the Poisson's ratio $\poisson$ does not enter the leading order solution, but does appear in the first order term, $G_{1,0}$; this indicates that the contribution to the problem from the dry region enters at lower order (the Poisson's ratio only enters the problem via the boundary conditions on the dry region, at $x = 1$), i.e. bending deformations are confined primarily to the wet region in the limit of small deformations, as expected.
 
 \begin{figure}
 \centering
 \includegraphics[width = \textwidth]{figures/fig8_asymptotics.pdf}
-\caption{(a) Numerically obtained values for the normalized perturbation to the channel width $H(x = x_0)$ and (b) normalized growth rate $\sigma$ as a function of the reduced wavenumber $k/k_c$. Each curve corresponds to a unique $(V,\nu)$ pair (the aspect ratio $a = 0.01$ is fixed), whose combination $\nu V^5 /a$ is indicated by the colors in the colorbar. The black dashed curves correspond to the asymptotic results~\eqref{E:Asymptotics:ChannelShapeSolution} and~\eqref{E:Asymptotics:FastestGrowingMode}, respectively. The numerical results are indistinguishable from the asymptotic curves for $\nu V^5 /a \lesssim 10^{-2}$. The inset in (b) is a semilogarithmic plot of the ratio between the numerically obtained values of the maximum growth rate $\sigma^*$ for $V = 0.1$, $0.2$, $0.3$, and $0.4$. (These curves terminate where the corresponding equilibria cease to exist, having violated the no contact condition~\eqref{E:Equilibria:NoTouchCond}.) The black dashed curve indicates the small deformation prediction $\sigma^* = \sigma^*_{SD}$ (equation~\eqref{E:Asymptotics:FastestGrowingMode}).}
+\caption{(a) Numerically obtained values for the normalized perturbation to the channel width $H(x = x_0)$ and (b) normalized growth rate $\sigma$ as a function of the reduced wavenumber $k/k_c$. Each curve corresponds to a unique $(V,\nu)$ pair (the aspect ratio $a = 0.01$ is fixed), whose combination $\nu V^5 /a$ is indicated by the colours in the colorbar. The black dashed curves in (a) and (b) correspond to the asymptotic results~\eqref{E:Asymptotics:ChannelShapeSolution} and~\eqref{E:Asymptotics:FastestGrowingMode}, respectively. The numerical results are indistinguishable from the asymptotic curves for $\nu V^5 /a \lesssim 10^{-2}$. The inset in (b) is a semilogarithmic plot of the ratio between the numerically obtained values of the maximum growth rate $\sigma^*$ for $V = 0.1$, $0.2$, $0.3$, and $0.4$. (These curves terminate where the corresponding equilibria cease to exist, having violated the no contact condition~\eqref{E:Equilibria:NoTouchCond}.) The black dashed curve indicates the small deformation prediction $\sigma^* = \sigma^*_{SD}$ (equation~\eqref{E:Asymptotics:FastestGrowingMode}).}
 \label{fig:CollapsedGrowthRates}
 \end{figure}
 
@@ -609,35 +610,37 @@ Noting that $\sigma_c = \epsilon\param/V^2$, substituting~\eqref{E:Asymptotics:L
 \begin{equation}\label{E:Asymptotics:SigmaResult}
 \frac{\sigma(K)}{\sigma_c} =  \frac{K^2\left(1-2K^2 \right)}{6}  + \mathcal{O}(\param).
 \end{equation}
-Equation~\eqref{E:Asymptotics:SigmaResult} gives the envelope of the curves $\sigma(k)$ (figure~\ref{fig:CollapsedGrowthRates}b). Moreover, and as expected from~\eqref{E:Asymptotics:ExpansionSigma}, numerical solutions with larger values of $\param = \nu V^5 /|a|$ deviate more significantly from this envelope.
+Equation~\eqref{E:Asymptotics:SigmaResult} gives the envelope of the curves $\sigma(k)$ (figure~\ref{fig:CollapsedGrowthRates}b). Moreover, and as expected from~\eqref{E:Asymptotics:ExpansionSigma}, numerical solutions with larger values of $\param = \nu V^5 /|a|$ deviate more significantly from this limiting curve.
 
 By maximizing~\eqref{E:Asymptotics:SigmaResult} with respect to $K$, we find that the small deformation estimates of the fastest growing mode, denoted $k^*_{SD}$, and the corresponding growth rate, denoted $\sigma^*_{SD}$, are
 \begin{equation}\label{E:Asymptotics:FastestGrowingMode}
 \sigma^*_{SD}= \frac{1}{48}\sigma_c = \frac{1}{48}\frac{\nu^2 V^7}{|\aspect|}, \qquad k^*_{SD}= \frac{1}{2}k_c = \frac{1}{2}\sqrt{\frac{\nu V^3}{\aspect}}.
 \end{equation}
-which agree well with numerical solutions of the BVP (see inset of figure~\ref{fig:CollapsedGrowthRates}b, in which perfect agreement would correspond to a constant value of one in the abscissa). Numerical solutions with larger values of $V$, and thus larger values of $\epsilon = |\nu| V^4$ for a given $\nu$, `peel off' from the asymptotic prediction~\eqref{E:Asymptotics:FastestGrowingMode} at a lower value of $\delta$, as we would expect. The asymptotic result~\eqref{E:Asymptotics:FastestGrowingMode} overestimates the fastest growing mode as $\param$ grows from zero because the increased penalizing effect of in-plane bending, which suppressed the growth rate relative to the asymptotic result, is stronger than the effect of increased deformation of the base state.
+which agree well with numerical solutions of the BVP (see inset of figure~\ref{fig:CollapsedGrowthRates}b, in which perfect agreement would correspond to a constant value of one in the abscissa). Numerical solutions with larger values of $V$, and thus larger values of $\epsilon = |\nu| V^4$ for a given $\nu$, `peel off' from the asymptotic prediction~\eqref{E:Asymptotics:FastestGrowingMode} at a lower value of the ordinate $\delta$, as we would expect. The asymptotic result~\eqref{E:Asymptotics:FastestGrowingMode} overestimates the fastest growing mode as $\param$ grows from zero; briefly, this is because the increased penalizing effect of in-plane bending as $V$ increases and base-state deformations grow -- which suppresses the growth rate relative to the asymptotic result -- is stronger than the effect of increased deformation of the base state (because the meniscus pressure scales with $1/h$, the narrower the confinement at the meniscus, the greater the pressure reduction when the meniscus is perturbed).
 
 \section{Summary}\label{S:Conclusion}
 %very broad description
-In this paper, we set out to understand the periodic pattern that is observed in experiments in which liquid condenses into deformable microchannels. In doing so, we identified a novel instability mechanism that is driven by a competition between interfacial curvatures at the liquid surface, and is mediated by the elasticity of the channel in response to liquid pressure. This bendocapillary instability is theoretically possible in the same channel for both wetting and non-wetting liquids, unlike the analogous instability in rigid, tapered channels~\citep{AlHousseiny2012NaturePhysics}.
+In this paper, we set out to understand the periodic pattern that is observed in experiments in which liquid condenses slowly into deformable microchannels. In doing so, we identified a novel bendocapillary instability mechanism, which is driven by the competition between interfacial curvatures at the liquid surface, and is mediated by the elasticity of the channel in response to liquid pressure. This bendocapillary instability is theoretically possible in the same channel for both wetting and non-wetting liquids, unlike the nearest analogous instability in rigid, tapered channels~\citep{AlHousseiny2012NaturePhysics}.
 
 %what did we do: studied system which may be susceptible, scaling argument, develop mathematical model, linear stability analysis, asymptotics (and why did we do these
-We studied this mechanism in detail by considering a simple system that may be susceptible to the instability. We developed a mathematical model of this system, which was simplified by exploiting the small aspect ratio of the both the channel walls and cavity between them, allowing us to appeal to linear plate theory to describe solid deformations and lubrication theory to describe the flow. In non-dimensionalizing this system, we identified three dimensionless parameters, relating to the ability of the liquid to deform the channel walls, the liquid volume, and the channel aspect ratio. Equilibrium configurations, which form the base states of the system, are parametrized by the first two of these. 
+We studied this mechanism in detail by considering a simple system that is susceptible it. We developed a mathematical model of this system, which was simplified by exploiting the small aspect ratio of the both the channel walls and the cavity between them, allowing us to appeal to linear plate theory to describe deformations of the channel walls and lubrication theory to describe the flow. In non-dimensionalizing this system, we identified three dimensionless parameters, relating to the ability of the liquid to deform the channel walls, the liquid volume, and the channel aspect ratio. Equilibrium configurations, which form the base states of the system, are parametrized by the first two of these. 
 
-The rest of the paper focused on the linear stability of these equilibria to in-plane perturbations. To assess this stability, we set out the linearized equation that must be satisfied by perturbations; these equations illustrate explicitly the two ways that the elastic case differs from the tapered, rigid case: the bulk channel deformation is set by the liquid pressure, and the perturbation induces an additional elastic response of the channel, altering its geometry. Numerical solutions of the linearized equations suggested three key results, which were verified analytically in the limit of small deformations: (1) both wetting and non-wetting equilibria are always unstable to perturbations of a sufficiently small wavenumber, (2) the growth rate of the fastest growing mode is highly sensitive to the amount of liquid within the channel ($\sigma \sim V^7$), and (3) the additional elastic response to the perturbation always enhances the destabilizing in-plane curvature contribution, and thus tends to promote instability.
+The rest of the paper focused on the linear stability of these equilibria to in-plane perturbations. We set out the linearized equations that must be satisfied by perturbations; these equations illustrate explicitly the two ways that the elastic case differs from the tapered, rigid case: the bulk channel deformation is set by the liquid pressure, and the perturbation induces an additional elastic response of the channel. Numerical solutions of the linearized equations suggested three key results, which were verified analytically in the limit of small deformations: (1) both wetting and non-wetting equilibria are always unstable to perturbations of a sufficiently small wavenumber, (2) the growth rate of the fastest growing mode is highly sensitive to the amount of liquid within the channel ($\sigma \sim V^7$), and (3) the additional elastic response to the perturbation always enhances the destabilizing in-plane curvature contribution, and thus tends to promote instability.
 
 %% above paragraph replaced below %%
 %By performing a linear stability analysis of its equilibrium configurations, we identified that the system is unstable to perturbations of a sufficiently small wavenumber. The linearized equations elucidate the two main ways that the elastic case differs from the tapered, rigid case in two important ways: the bulk channel elasticity is set by the liquid pressure, and the channel responds to the perturbation in a way that tends to enhance the difference between the in-plane and transverse curvatures, increasing the range of unstable wavenumbers. The growth rate of the fastest growing mode is highly sensitive to the amount of liquid within the channel (parametrized by the cross-sectional volume $V$); in particular, we identified that the growth rate $\sigma \sim V^7$ in the case of small deformations and negligible in-plane bending from both a simple scaling argument and a formal asymptotic analysis.
 
 %but we only looked at constant volume cases, introduce changing volume 
-In this first part one of two, we considered only the no condensation case, in which equilibria have a constant cross sectional volume $V$; in the second part, we describe how a non-zero condensation rate (i.e. how changing the volume of liquid in the channel) changes the picture presented here. The sensitive dependence on the amount of liquid in the channel suggests that the results may of this paper may be significantly different when a non-zero condensation rate is included. In the motivating experiments, however, condensation is very slow and an order of magnitude estimate for the experimentally observed wavelength may therefore be obtained from the quasistatic analysis presented here. Using values from~\cite{Seemann2011JPhysCondMat}, we find that $\nu \approx -12$ and $\aspect \approx -0.38$ in these experiments; the wavelength of approximately $200~\si{\micro \meter}$ that is observed experimentally (see figure~\ref{fig:Experiments}) agrees in its order of magnitude with the asymptotic result~\eqref{E:Asymptotics:FastestGrowingMode}, which predicts a wavelength of $370~\si{\micro \meter}$ when the channel is half full, $V = 0.5$. Smaller values of $V$ result in predictions of longer wavelengths, but these are of the same order of magnitude (e.g. with $V = 0.1$, the scaling argument predicts a wavelength of $4~\si{\milli \meter}$.) 
+%In this first part one of two, we considered only the no condensation case, in which equilibria have a constant cross sectional volume $V$; in the second part, we describe how a non-zero condensation rate (i.e. how changing the volume of liquid in the channel) changes the picture presented here. 
+
+The sensitive dependence on the amount of liquid in the channel suggests that the results may of this paper may be significantly different when a non-zero condensation rate is included. In the motivating experiments, however, condensation is very slow and an order of magnitude estimate for the experimentally observed wavelength may therefore be obtained from the quasistatic analysis presented here. Using values from~\cite{Seemann2011JPhysCondMat}, we find that $\nu \approx -12$ and $\aspect \approx -0.38$ in these experiments; the wavelength of approximately $200~\si{\micro \meter}$ that is observed experimentally (see figure~\ref{fig:Experiments}) agrees in its order of magnitude with the asymptotic result~\eqref{E:Asymptotics:FastestGrowingMode}, which predicts a wavelength of $370~\si{\micro \meter}$ when the channel is half full, $V = 0.5$. Smaller values of $V$ result in predictions of longer wavelengths, but these are of the same order of magnitude (e.g. with $V = 0.1$, the scaling argument predicts a wavelength of $4~\si{\milli \meter}$.) 
 
 %our results suggests that configurations are always unstable to \emph{some} wavelength, but we don't expect to see instability in practice because of (and not limited to) (a) slow growth rates (b) finite size effects and (c) contact angle hysteresis
-As mentioned, our results suggests that narrow, deformable channels on small scales are always unstable to perturbations of sufficiently long wavelengths. There are several reasons why we do not expect this to be the case in practice. Firstly, realistic channels will have a finite extent in the $y$-direction (as it is referred to here); the maximum wavelength of perturbations will be restricted to this maximum length. Secondly, configurations with stiff walls (small $\nu$), will have fastest growing modes whose growth rates are very small (the growth rate $\sigma \sim \nu^2$ see equation~\eqref{E:Asymptotics:FastestGrowingMode}), allowing processes that occur on longer timescales (e.g. evaporation or condensation) to interact with the growth of the bendocapillary instability. Finally, we made a series of assumptions on the physical processes included -- and neglected -- in our model. Perhaps most notably, we have neglected dynamic contact angle effects, shown to be important in controlling the dynamics in similar elastocapillary systems~\citep{Bradley2021}. Contact angle hysteresis is expected to reduce the growth rate of perturbations: protrusions of a perturbation, which are advancing interfaces, will have a higher contact angle, and thus smaller magnitude pressure, than invaginations, which are receding interfaces~\citep{Bradley2021}.
+As mentioned, our results suggests that narrow, deformable channels on small scales are always unstable to perturbations of sufficiently long wavelengths. There are several reasons why we do not expect this to be the case in practice. Firstly, realistic channels will have a finite extent in the $y$-direction (as it is referred to here); the maximum wavelength of perturbations will be restricted to this maximum length. Secondly, configurations with stiff walls (small $\nu$), will have fastest growing modes whose growth rates are very small (the growth rate $\sigma \sim \nu^2$ see equation~\eqref{E:Asymptotics:FastestGrowingMode}), allowing processes that occur on longer timescales (e.g. evaporation or condensation) to interact with the growth of the bendocapillary instability. Finally, we made a series of assumptions on the physical processes included in our model. Perhaps most notably, we have neglected dynamic contact angle effects, shown to be important in controlling the dynamics in similar bendocapillary systems~\citep[e.g][]{Bradley2021PRF}. Contact angle hysteresis is expected to reduce the growth rate of perturbations: protrusions of a perturbation, which are advancing interfaces, will have a higher contact angle, and thus smaller magnitude pressure, than invaginations, which are receding interfaces.
 
 
 %implications: can this instability be exploited
-We postulate that the fact this bendocapillary instability has not been described in detail previously might suggest is has not been encountered in any situations in which it is a hindrance. We hope, therefore, that the insights offered in this paper might motivate further will motivate further experimental studies to quantify and understand the interface dynamics in bendocapillary systems and identify situations in which it may be exploited. 
+We postulate that the fact this bendocapillary instability has not been described in detail previously might suggest it has not been encountered in any situations in which it is a hindrance. We hope, therefore, that the insights offered in this paper might motivate further experimental and theoretical studies to quantify, and understand, such bendocapillary instabilities and identify situations in which they might be exploited. 
 
 
 
@@ -654,7 +657,7 @@ Q_0 &= \dd{^4 G_0}{X^4} & & 0 < X < \frac{1}{V},
 \begin{align}
 G_0 &= 0 = \dd{G_0}{X}= \dd{Q_0}{X} & &\text{at}~X = 0,\label{A:Asymptotics:0thOrder:x0bc}\\
 Q_0 &=0 & &\text{at}~X = 1,\label{A:Asymptotics:0thOrder:pressurebc}\\
-\dd{^2 G_0}{X^2} &=0 = \dd{^3 G_0}{X^3} & &\text{at}~X = \frac{1}{V},
+\dd{^2 G_0}{X^2}&=0, \quad  \dd{^3 G_0}{X^3} = 0 & &\text{at}~X = \frac{1}{V},
 \end{align}
 \begin{equation}
 \left[G_0\right]_-^+ =0 = \left[\dd{G_0}{X}\right]_-^+ = \left[\dd{^2 G_0}{X^2}\right]_-^+, \quad  \left[\dd{^3 G_0}{X^3}\right]_-^+ = 1,
@@ -662,7 +665,7 @@ Q_0 &=0 & &\text{at}~X = 1,\label{A:Asymptotics:0thOrder:pressurebc}\\
 \begin{equation}\label{A:Asymptotics:0thOrder:kinematic}
 3V^2 \sigma_0 = -\left.\dd{Q_0}{X}\right|_{X=1}.
 \end{equation}
-From~\eqref{A:Asymptotics:0thOrder:ODEwet},  the pressure $Q_0$ is a linear function of $X$. However, from~\eqref{A:Asymptotics:0thOrder:x0bc}--\eqref{A:Asymptotics:0thOrder:pressurebc}, this linear function has no slope and passes through zero; we therefore have $Q_0 = 0$, and from~\eqref{A:Asymptotics:0thOrder:kinematic}, $\sigma_0 = 0$. The solution to~\eqref{A:Asymptotics:0thOrder:ODEwet}--\eqref{A:Asymptotics:0thOrder:kinematic} for the channel shape is
+From~\eqref{A:Asymptotics:0thOrder:ODEwet},  the pressure $Q_0$ is a linear function of $X$. However, from~\eqref{A:Asymptotics:0thOrder:x0bc}--\eqref{A:Asymptotics:0thOrder:pressurebc}, this linear function has no slope and passes through zero, i.e. $Q_0 = 0$. Then, from~\eqref{A:Asymptotics:0thOrder:kinematic}, we have $\sigma_0 = 0$. The solution to~\eqref{A:Asymptotics:0thOrder:ODEwet}--\eqref{A:Asymptotics:0thOrder:kinematic} for the channel shape is
 \begin{equation}\label{A:Asymptotics:0thOrder:solution}
 G_0 = \begin{cases}
 -\frac{X^2}{6}\left(3-X\right) & 0 < X < 1,\\
@@ -670,10 +673,10 @@ G_0 = \begin{cases}
 \end{cases}
 \end{equation}
 
-The first order ($\order{\delta}$) problem is similar, and is also independent of the relative sizes of $\epsilon$ and $\delta$. Again, we get no pressure contribution, $Q_1 = 0$ (the equations for $Q_1$ are identical to those for $Q_0$) and thus $\sigma_1 = 0$. The shape contribution $G_1$ is non-trivial, but is not required for the determination of the leading order behaviour for $\sigma$, and we therefore do not state it here. We note, however, that the Poisson's ratio $\poisson$ first appears in this term, highlighting the lower order contribution of the dry regions.
+The first order ($\order{\delta}$) problem is similar, and is also independent of the relative sizes of $\epsilon$ and $\delta$. Again, we get no pressure contribution, $Q_1 = 0$ (the equations for $Q_1$ are identical to those for $Q_0$) and thus $\sigma_1 = 0$. The shape contribution $G_1$ is non-trivial, but is not required for the determination of the leading order behaviour for $\sigma$, and we therefore do not state it here. We note, however, that the Poisson's ratio $\poisson$ first appears in this term, highlighting the lower order contribution of the dry regions, as mentioned in the main text.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-The  $\mathcal{O}(\delta^2)$ problem may be expressed simply be exploiting the  $\mathcal{O}(1)$ and $\mathcal{O}(\delta)$ problems. We give only this simplified form here:
+The  $\mathcal{O}(\delta^2)$ problem is expressed more simply be exploiting the $\mathcal{O}(1)$ and $\mathcal{O}(\delta)$ problems. We give only this simplified form here:
 \begin{align}
  \dd{^2 Q_2}{X^2}&=0 & &0 < X<1,\\
 Q_2 &= 0 & &1 < X< \frac{1}{V},\\
@@ -690,7 +693,7 @@ Q_2 &=G_0+ K^2+ \dd{\psi}{X} & &\text{at}~X = 1,\label{A:Asymptotics:2ndOrder:Pr
 \begin{equation}
 3V^2 \sigma_2 = -\left.\dd{Q_2}{X}\right|_{X=1}.
 \end{equation}
-Crucially, the boundary condition~\eqref{A:Asymptotics:2ndOrder:PressureBC} is inhomogeneous, in contrast to the corresponding boundary condition for the lower order problems. We therefore find the first non-zero pressure term in the expansion~\eqref{E:Asymptotics:ExpansionQ} for the channel shape perturbation to be
+Crucially, the boundary condition~\eqref{A:Asymptotics:2ndOrder:PressureBC} is inhomogeneous, in contrast to the corresponding boundary condition for the lower order problems (e.g.~\eqref{A:Asymptotics:0thOrder:pressurebc}). We therefore find the first non-zero pressure term in the expansion~\eqref{E:Asymptotics:ExpansionQ} for the channel shape perturbation to be
 \begin{equation}\label{A:Asymptotics:2ndOrder:solQ2}
 Q_2 = \begin{cases}
 K^2 - \frac{1}{2} & 0 <X  < 1,\\
