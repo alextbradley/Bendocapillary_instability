@@ -24,6 +24,7 @@ krange_out = nan(lv*ln, lk);
 H_x0_out = nan(lv*ln, lk);
 kscale_out = nan(lv*ln,1);
 delta_out = nan(lv*ln,1);
+eps_out = nan(lv*ln,1);
 nuV3 = nan(lv*ln,1);
 
 %colormap
@@ -32,6 +33,12 @@ maxval = (max(nu)*max(V)^5/a);
 minval = (min(nu)*min(V)^5/a);
 logmaxval = log(maxval);
 logminval = log(minval);
+%colour by eps
+maxval = (max(nu)*max(V)^4);
+minval = (min(nu)*min(V)^4);
+logmaxval = log(maxval);
+logminval = log(minval);
+
 colmap = parula(nc);
 %% Generate data
 count = 1;
@@ -46,6 +53,7 @@ for i = 1:lv
         krange = linspace(0,kscale,lk);
         krange_out(count,:) = krange;
         delta_out(count) = nu(j)*V(i)^5/a;
+        eps_out(count) = nu(j)*V(i)^4;
         nuV3(count) = nu(j)*V(i)^3;
         
         %equilibrium details
@@ -84,23 +92,25 @@ figure(numplot); clf;
 subplot(1,2,1); hold on
 for i = 1:ln*lv
     %work out the color
-    ratio = (log(delta_out(i)) - logminval)/(logmaxval - logminval); %how close to min or max value are we
+    %ratio = (log(delta_out(i)) - logminval)/(logmaxval - logminval); %how close to min or max value are we
+    ratio = (log(eps_out(i)) - logminval)/(logmaxval - logminval); %how close to min or max value are we
     [~,idx] = min(abs(linspace(0,1,nc) - ratio));
     plot(krange_out(i,:)/kscale_out(i), 3*H_x0_out(i,:)/nuV3(i), 'color', colmap(idx, :))
 end
 plot([0,1], -[1,1], 'k--')
 box on
 xlabel('$k / k_c$', 'interpreter', 'latex', 'FontSize', 20);
-ylabel('$3 H(x_0)/(\nu V^3)$', 'interpreter', 'latex',  'FontSize', 20); 
+ylabel('$6 H(x_0)/(\nu V^3)$', 'interpreter', 'latex',  'FontSize', 20); 
 ax2 = gca; 
 ax2.Position(3) = 0.25;
-yticks([-2:0.4:0])
+yticks([-2:0.5:0])
 
 
 subplot(1,2,2); hold on
 for i = 1:ln*lv
     %work out the color
     ratio = (log(delta_out(i)) - logminval)/(logmaxval - logminval); %how close to min or max value are we
+    ratio = (log(eps_out(i)) - logminval)/(logmaxval - logminval); %how close to min or max value are we
     [~,idx] = min(abs(linspace(0,1,nc) - ratio));
     plot(krange_out(i,:)/kscale_out(i), sigma_out(i,:)/sigmascale_out(i), 'color', colmap(idx, :))
 end
@@ -111,11 +121,13 @@ plot(xx, yy, 'k--')
 xlabel('$k / k_c$', 'interpreter', 'latex', 'FontSize', 20);
 ylabel('$\sigma/\sigma_c$', 'interpreter', 'latex',  'FontSize', 20); 
 c = colorbar;
-c.Label.String = '$\nu V^5 /a$';
+c.Label.String = '$\nu V^3$';
 c.Label.Interpreter = 'latex';
 c.Label.FontSize = 20;
-c.Ticks = 1/7:2/7:1; %five ticks
-c.TickLabels = {"10^{-4}","10^{-2}","10^{0}","10^{2}","10^{2}"};
+%c.Ticks = 1/7:2/7:1; %five ticks
+%c.TickLabels = {"10^{-4}","10^{-2}","10^{0}","10^{2}","10^{2}"};
+c.Ticks = linspace(0,1,8);
+c.TickLabels = {"10^{-5}","10^{-4}","10^{-3}","10^{-2}","10^{-1}","10^{0}","10^{1}","10^{2}"};
 ax2=gca; 
 ax2.Position(1) = 0.46;
 ax2.Position(3) = 0.44;
@@ -132,13 +144,18 @@ for i = 1:lv
         sigmas = sigma_out((i-1)*ln + j,:);
         sigmamax(j) = 48*max(sigmas)/sigmascale_out((i-1)*ln + j);
     end
-    plot(delta_out((i-1)*ln + 1:(i-1)*ln + ln), sigmamax, 'o-','color', colmap2(i,:), 'markersize', 5)
+    plot(eps_out((i-1)*ln + 1:(i-1)*ln + ln), sigmamax, 'o-','color', colmap2(i,:), 'markersize', 5)
 end
-xlim([1e-5, 100])
+xlim([1e-5, 10])
 ylim([0.2, 1.1])
 ax = gca;
 plot(ax.XLim, [1,1], 'k--');
 set(gca, 'XScale', 'log')
 box on
 xlabel('$\nu V^5 /a $', 'interpreter', 'latex', 'FontSize', 16);
+xlabel('$\nu V^3 $', 'interpreter', 'latex', 'FontSize', 16);
+
 ylabel('$48 \sigma^*/\sigma^*_{SD}$', 'interpreter', 'latex',  'FontSize', 16); 
+
+fig = gcf;
+fig.Position(3:4) = [1100, 500];
