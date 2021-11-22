@@ -532,7 +532,7 @@ $P$, and the growth rate, $\sigma$, in both $\epsilon$ and $\kappa$. Note, howev
 
 Before we proceed, it is instructive to introduce a rescaled  perturbed  channel  shape $H$ and  pressure $P$:
 \begin{equation}\label{E:Asymptotics:Rescaling}
-G(X) = \frac{-H(X)}{\nu V^3}, \qquad Q(X) = \frac{P(X)}{\nu V^3}
+G(X) = \frac{H(X)}{\nu V^3}, \qquad Q(X) = \frac{P(X)}{\nu V^3}
 \end{equation}
 These scalings reflect the leading order behaviour of the perturbation: a shear force of magnitude $\nu$ applied over a length equal to  the magnitude  of  the  perturbation  (the  shear  is  the  third  derivative  of  the  channel deformation, which, when combined with the length rescaling, is responsible for the $V^3$). 
 
@@ -572,8 +572,8 @@ In Appendix~\ref{A:SmallDeformationAsymptotics}, we set out the hierarchy of pro
 The leading order contribution to the perturbation to the channel shape is
 \begin{equation}\label{E:Asymptotics:ChannelShapeSolution}
 G_{0} =\begin{cases}
-\frac{X^3}{6} & 0 < X < 1,\\
-\frac{1}{6}(3X-2) & 1 < X < 1/V.
+\frac{-X^3}{6} & 0 < X < 1,\\
+\frac{-1}{6}(3X-2) & 1 < X < 1/V.
 \end{cases}
 \end{equation}
 
@@ -594,9 +594,9 @@ The first non-zero term in the expansion~\eqref{E:Asymptotics:ExpansionQ} is $Q_
 
 Noting that $\sigma_c = \epsilon^2/(\kappa) V^2$, substituting~\eqref{E:Asymptotics:LeadingOrderSigma} in to the expansion~\eqref{E:Asymptotics:ExpansionSigma}, gives
 \begin{equation}\label{E:Asymptotics:SigmaResult}
-\frac{\sigma(K)}{\sigma_c} =  \frac{K^2\left(1-2K^2 \right)}{6}  + \mathcal{O}(\param).
+\frac{\sigma(K)}{\sigma_c} \sim  \frac{K^2\left(1-2K^2 \right)}{6}
 \end{equation}
-Equation~\eqref{E:Asymptotics:SigmaResult} gives the limiting curve that can be compared with numerical solutions for $\sigma(k)/\sigma_c$ (figure~\ref{fig:CollapsedGrowthRates}b). As expected from~\eqref{E:Asymptotics:ExpansionSigma}, numerical solutions with larger values of $\epsilon = \nu V^3$ deviate more significantly from this limiting curve.
+as $\epsilon \to 0$. The right-hand side of~\eqref{E:Asymptotics:SigmaResult} gives the limiting curve that can be compared with numerical solutions for $\sigma(k)/\sigma_c$ (figure~\ref{fig:CollapsedGrowthRates}b). As expected from~\eqref{E:Asymptotics:ExpansionSigma}, numerical solutions with larger values of $\epsilon = \nu V^3$ deviate more significantly from this limiting curve.
 
 By maximizing~\eqref{E:Asymptotics:SigmaResult} with respect to $K$, we find that the small deformation estimates of the fastest growing mode, denoted $k^*_{SD}$, and the corresponding growth rate, denoted $\sigma^*_{SD}$, are
 \begin{equation}\label{E:Asymptotics:FastestGrowingMode}
@@ -619,7 +619,7 @@ The rest of the paper focused on the linear stability of these equilibria to in-
 %but we only looked at constant volume cases, introduce changing volume 
 %In this first part one of two, we considered only the no condensation case, in which equilibria have a constant cross sectional volume $V$; in the second part, we describe how a non-zero condensation rate (i.e. how changing the volume of liquid in the channel) changes the picture presented here. 
 
-The sensitive dependence on the amount of liquid in the channel suggests that the results may of this paper may be significantly different when a non-zero condensation rate is included. In the motivating experiments, however, condensation is very slow and an order of magnitude estimate for the experimentally observed wavelength may therefore be obtained from the quasistatic analysis presented here. Using values from~\cite{Seemann2011JPhysCondMat}, we find that $\nu \approx -12$ and $\aspect \approx -0.38$ in these experiments; the wavelength of approximately $200~\si{\micro \meter}$ that is observed experimentally (see figure~\ref{fig:Experiments}) agrees in its order of magnitude with the asymptotic result~\eqref{E:Asymptotics:FastestGrowingMode}, which predicts a wavelength of $370~\si{\micro \meter}$ when the channel is half full, $V = 0.5$. Smaller values of $V$ result in predictions of longer wavelengths, but these are of the same order of magnitude (e.g. with $V = 0.1$, the scaling argument predicts a wavelength of $4~\si{\milli \meter}$.) 
+The sensitive dependence on the amount of liquid in the channel suggests that the results of this paper may be significantly different when a non-zero condensation rate is included. In the motivating experiments, however, condensation is very slow and an order of magnitude estimate for the experimentally observed wavelength may therefore be obtained from the analysis presented here. Using values from~\cite{Seemann2011JPhysCondMat}, we find that $\nu \approx -12$ and $\aspect \approx -0.38$ in these experiments; assuming a channel that is half filled with liquid ($V = 0.5$), the asymptotic result~\eqref{E:Asymptotics:FastestGrowingMode} predicts a wavelength of $370~\si{\micro \meter}$, which agrees in its order of magnitude with the wavelength of approximately $200~\si{\micro \meter}$ that is observed experimentally (see figure~\ref{fig:Experiments}). (Smaller values of $V$ result in predictions of longer wavelengths, but these are of the same order of magnitude (e.g. with $V = 0.1$, the scaling argument predicts a wavelength of $4~\si{\milli \meter}$.) 
 
 %our results suggests that configurations are always unstable to \emph{some} wavelength, but we don't expect to see instability in practice because of (and not limited to) (a) slow growth rates (b) finite size effects and (c) contact angle hysteresis
 As mentioned, our results suggests that narrow, deformable channels on small scales are always unstable to perturbations of sufficiently long wavelengths. There are several reasons why we do not expect this to be the case in practice. Firstly, realistic channels will have a finite extent in the $y$-direction (as it is referred to here); the maximum wavelength of perturbations will be restricted to this maximum length. Secondly, configurations with stiff walls (small $\nu$), will have fastest growing modes whose growth rates are very small (the growth rate $\sigma \sim \nu^2$ see equation~\eqref{E:Asymptotics:FastestGrowingMode}), allowing processes that occur on longer timescales (e.g. evaporation or condensation) to interact with the growth of the bendocapillary instability. Finally, we made a series of assumptions on the physical processes included in our model. Perhaps most notably, we have neglected dynamic contact angle effects, shown to be important in controlling the dynamics in similar bendocapillary systems~\citep[e.g][]{Bradley2021PRF}. Contact angle hysteresis is expected to reduce the growth rate of perturbations: protrusions of a perturbation, which are advancing interfaces, will have a higher contact angle, and thus smaller magnitude pressure, than invaginations, which are receding interfaces.
@@ -631,10 +631,15 @@ We postulate that the fact this bendocapillary instability has not been describe
 
 
 \appendix
-\section{Asymptotic Analysis for $\epsilon \sim \delta^2$}\label{A:SmallDeformationAsymptotics}
-In this appendix, we set out, and present an analysis of, the hierarchy of equations up to $\order{\delta}$, that arise from inserting the asymptotic expansion~\eqref{E:Asymptotics:ExpansionG}--\eqref{E:Asymptotics:ExpansionSigma} into the system of equations~\eqref{E:Asymptotics:ODEwet}--\eqref{E:Asymptotics:kinematic} in the case that $\epsilon \sim \delta^2$. To reflect this asymptotic order, we introduce $\beta = \epsilon / \delta^2 = \order{1}$ here.
+\section{Asymptotic Analysis of the Small Deformation Problem}\label{A:SmallDeformationAsymptotics}
+In this appendix, we present an asymptotic analysis of the eigenvalue problem~\eqref{E:Asymptotics:ODEwet}--\eqref{E:Asymptotics:ODEwet} which emerges from the full problem~\eqref{E:LSA:ODEwet}--\eqref{E:LSA:kinematic} in the case that $\epsilon \sim \kappa^2$. Recall that to make progress, we pose an asymptotic expansion in powers of $\epsilon^{1/2}$
+\begin{align}
+G(X) &=    G_0 + \epsilon^{1/2} G_1 + \epsilon G_2+ \dots, \label{A:E:G_expansion}\\
+Q(X) &=  Q_0 + \epsilon^{1/2} Q_1 + \epsilon Q_2+\dots,\label{A:E:Q_expansion}\\
+\sigma(k) &= \sigma_0 + \epsilon^{1/2} \sigma_1 + \epsilon \sigma_2+ \dots. \label{A:E:sigma_expansion}
+\end{align}
 
-The leading order ($\order{1}$) problem, which is independent of the balance between $\epsilon$ and $\delta$ reads
+After introducing~\eqref{A:E:G_expansion}--\eqref{A:E:sigma_expansion} into~\eqref{E:Asymptotics:ODEwet}--\eqref{E:Asymptotics:ODEwet}, we obtain a hierarchy of problems by balancing powers of $\epsilon^{1/2}$. The leading order ($\order{1}$) problem reads
 \begin{align}
 0&= \dd{^2Q_0}{X^2} & &0 < X<1,\label{A:Asymptotics:0thOrder:ODEwet}\\
 0&= Q_0  & &1 < X< \frac{1}{V},\\
@@ -653,16 +658,16 @@ Q_0 &=0 & &\text{at}~X = 1,\label{A:Asymptotics:0thOrder:pressurebc}\\
 \end{equation}
 From~\eqref{A:Asymptotics:0thOrder:ODEwet},  the pressure $Q_0$ is a linear function of $X$. However, from~\eqref{A:Asymptotics:0thOrder:x0bc}--\eqref{A:Asymptotics:0thOrder:pressurebc}, this linear function has no slope and passes through zero, i.e. $Q_0 = 0$. Then, from~\eqref{A:Asymptotics:0thOrder:kinematic}, we have $\sigma_0 = 0$. The solution to~\eqref{A:Asymptotics:0thOrder:ODEwet}--\eqref{A:Asymptotics:0thOrder:kinematic} for the channel shape is
 \begin{equation}\label{A:Asymptotics:0thOrder:solution}
-G_0 = \begin{cases}
--\frac{X^2}{6}\left(3-X\right) & 0 < X < 1,\\
--\frac{1}{6}\left(X-1\right) & 1< X < 1/V.
+G_0  =\begin{cases}
+\frac{-X^3}{6} & 0 < X < 1,\\
+\frac{-1}{6}(3X-2) & 1 < X < 1/V.
 \end{cases}
 \end{equation}
 
-The first order ($\order{\delta}$) problem is similar, and is also independent of the relative sizes of $\epsilon$ and $\delta$. Again, we get no pressure contribution, $Q_1 = 0$ (the equations for $Q_1$ are identical to those for $Q_0$) and thus $\sigma_1 = 0$. The shape contribution $G_1$ is non-trivial, but is not required for the determination of the leading order behaviour for $\sigma$, and we therefore do not state it here. We note, however, that the Poisson's ratio $\poisson$ first appears in this term, highlighting the lower order contribution of the dry regions, as mentioned in the main text.
+The first order ($\order{\epsilon^{1/2}}$) problem is similar, and the equations for $Q_1$ are identical to those for $Q_0$, so we again get no pressure contribution, $Q_1 = 0$ and thus $\sigma_1 = 0$. The shape contribution $G_1$ is non-trivial, but is not required for the determination of the leading order behaviour for $\sigma$, and we therefore do not state it here. We note, however, that the Poisson's ratio $\poisson$ first appears in this term, highlighting the lower order contribution of the dry regions, as mentioned in the main text.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-The  $\mathcal{O}(\delta^2)$ problem is expressed more simply be exploiting the $\mathcal{O}(1)$ and $\mathcal{O}(\delta)$ problems. We give only this simplified form here:
+The  $\mathcal{O}(\epsilon)$ problem is expressed more simply be exploiting the $\mathcal{O}(1)$ and $\mathcal{O}(\epsilon^{1/2})$ problems. We give only this simplified form here:
 \begin{align}
  \dd{^2 Q_2}{X^2}&=0 & &0 < X<1,\\
 Q_2 &= 0 & &1 < X< \frac{1}{V},\\
@@ -686,9 +691,9 @@ K^2 - \frac{1}{2} & 0 <X  < 1,\\
 0 & 1 < X < 1/V,
 \end{cases}
 \end{equation}
-where we have used $G_0$, from~\eqref{A:Asymptotics:0thOrder:solution}, to obtain $Q_2$. (Note that for a relationship other than $\epsilon\sim \param^2$, the boundary condition~\eqref{A:Asymptotics:2ndOrder:PressureBC} would be unchanged because the shape contributions at higher order all take the same value at $ X= 1$.) This leading order pressure contribution is constant in the liquid and thus again offers no contribution to the growth rate, hence $\sigma_2 = 0$.
+where we have used $G_0$, from~\eqref{A:Asymptotics:0thOrder:solution}, to obtain $Q_2$. This leading order pressure contribution is constant in the liquid and thus again offers no contribution to the growth rate, hence $\sigma_2 = 0$.
 
-To obtain a non-zero term in the expansion for $\sigma$ we must proceed to $\mathcal{O}(\param^3)$, where we find that
+To obtain a non-zero term in the expansion for $\sigma$ we must proceed to $\mathcal{O}(\epsilon^{3/2})$, where we find that
 \begin{align}
  \dd{^2 Q_3}{X^2} - K^2 Q_2 &= 0 & &0 < X<1,\label{A:Asymptotics:3ndOrder:odewet}\\
 Q_3 &= 0 & &1 < X< \frac{1}{V},\\
@@ -713,16 +718,7 @@ Inserting~\eqref{A:Asymptotics:3ndOrder:solutionQ3} into~\eqref{A:Asymptotics:3n
 \begin{equation}\label{A:Asymptotics:3ndOrder:solutionsigma3}
 \sigma_3  = -\frac{K^2}{6V^2}\left(2K^2 - 1\right).
 \end{equation}
-This is the leading order term in the expansion~\eqref{E:Asymptotics:ExpansionSigma} for $\sigma$.
-
-Undoing the various variable changes introduced in \S\ref{S:Asymptotics}, the result~\eqref{A:Asymptotics:3ndOrder:solutionsigma3} gives
-\begin{equation}\label{A:Asymptotics:ThirdOrder:SigmaSolution}
-\sigma\sim \frac{\nu^2 V^7}{a}F\left(\frac{k}{k_c}\right)
-\end{equation}
-where
-\begin{equation}\label{A:Asymptotics:SigmaSolutionParticulars}
-F(\xi) = -\frac{\xi^2}{6}\left(2\xi^2 -1\right), \qquad k_c = \left(\frac{\nu V^3}{a}\right)^{1/2}.
-\end{equation}
+Undoing the various variable changes introduced in \S\ref{S:Asymptotics}, this gives the result in~\eqref{E:Asymptotics:SigmaResult}.
 
 
 \bibliographystyle{jfm}
