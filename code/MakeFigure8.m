@@ -121,7 +121,7 @@ plot(xx, yy, 'k--')
 xlabel('$k / k_c$', 'interpreter', 'latex', 'FontSize', 20);
 ylabel('$\sigma/\sigma_c$', 'interpreter', 'latex',  'FontSize', 20); 
 c = colorbar;
-c.Label.String = '$\nu V^3$';
+c.Label.String = '$\nu V^4$';
 c.Label.Interpreter = 'latex';
 c.Label.FontSize = 20;
 %c.Ticks = 1/7:2/7:1; %five ticks
@@ -152,9 +152,7 @@ ax = gca;
 plot(ax.XLim, [1,1], 'k--');
 set(gca, 'XScale', 'log')
 box on
-xlabel('$\nu V^5 /a $', 'interpreter', 'latex', 'FontSize', 16);
-xlabel('$\nu V^3 $', 'interpreter', 'latex', 'FontSize', 16);
-
+xlabel('$\nu V^4 $', 'interpreter', 'latex', 'FontSize', 16);
 ylabel('$48 \sigma^*/\sigma^*_{SD}$', 'interpreter', 'latex',  'FontSize', 16); 
 
 fig = gcf;
