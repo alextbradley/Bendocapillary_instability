@@ -192,9 +192,11 @@ grid on
 figure(numplot); clf; hold on
 for i = 1:lv
     plot(krange, h1_positive_nu(i,:), '-','color', cmap(i,:))
+    pl = plot(krange, -h1_positive_nu(i,:), ...
+        'color', (lv - i/2.5)/lv * [1,1,1], 'HandleVisibility', 'off'); %reflection in greyscale
     plot(krange, h1_negative_nu(i,:), '--',...
         'color', cmap(i,:), 'HandleVisibility', 'off')
-
+pl.Color
 end
 %tidy
 xlim([1e-3, 3])
