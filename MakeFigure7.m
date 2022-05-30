@@ -39,8 +39,8 @@ for i = 1:lv
       
         %setup bvp solver
         for p = 1:lk
-        x_mesh_wet = linspace(0,xmeq,5);
-        x_mesh_dry = linspace(xmeq,1,5);
+        x_mesh_wet = linspace(0,xmeq,500);
+        x_mesh_dry = linspace(xmeq,1,500);
         x_mesh     = [x_mesh_wet, x_mesh_dry];
         parsinit = 0; %initial guess at growth rate
         yinit = ones(6,1); %guess constant in each derivative

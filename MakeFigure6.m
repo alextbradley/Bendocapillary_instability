@@ -14,7 +14,6 @@ numplot = 1;
 %parameters 
 A = 1; %perturbation amplitude
 V = [0.1, 0.15, 0.2,0.25, 0.3,0.35]; 
-%V = 0.3;
 eta = 0.5;
 lv = length(V);
 nu = 5;
@@ -49,9 +48,9 @@ for i = 1:length(V)
     
     %loop over  k values
     for q = 1:lk
-        %mesh (initially) has 5 points in wet and dry
-        x_mesh_wet = linspace(0,xmeq,5);
-        x_mesh_dry = linspace(xmeq,1,5);
+        %mesh (initially) has 500 points in wet and dry
+        x_mesh_wet = linspace(0,xmeq,500);
+        x_mesh_dry = linspace(xmeq,1,500);
         x_mesh     = [x_mesh_wet, x_mesh_dry];
         
         %initial guess at shape and growth rate
